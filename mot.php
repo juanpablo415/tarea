@@ -16,7 +16,6 @@
     </form>
     
 <table width="100%" border="1">
-  <tr>
   <?php
 
 if(isset($_GET['multiplicador']))
@@ -25,30 +24,42 @@ if(isset($_GET['multiplicador']))
     $m2 = $_GET['fila'];
     $m3 = $_GET['columna'];
 
-    echo "<tabla border='1'><br>";
-    echo "<h3>tabla del $m1</h3>";
-
+    $m4=0;
+   
     for($i=1; $i<=$m2; $i++)
-    {
+    { 
+      
+        echo "<tr>";
+        
+        
         for($j=1; $j<=$m3; $j++)
-        {
+        { 
+            $m4++;
             echo "<td>";
-            $auxx=$i*$j;
-            echo "$i x $j=$auxx";
+            for($k=1; $k<=$m1; $k++)
+            { $m5=$m1;
+               
+  
+                 
+                $auxx=$k*$m4;
+            echo "$m4 x $k=$auxx";
+            
             echo "<br>";
+
+            }
+            
+            
+           
+            
             echo "</td>";
         }
         echo "</tr>";
-    }
-    echo "</table>";
+    }  
+   
+    
 }
 
 ?>
-    <td>
-
-    </td>
-    
-  </tr>
   
 </table>
 
