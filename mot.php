@@ -4,14 +4,17 @@
 <meta charset="UTF-8">
 </head>
 <body>
-    
+<h1>link de github "https://github.com/juanpablo415/tarea.git " </h1>
 
     <h1>tabla </h1>
     <form action="mot.php"method="GET">
-        <input type="number" min="1"name="columna" required>
-        <input type="number" min="1"name="fila" required>
-        <input type="number" min="1"name="multiplicador" required>
+    <center>
+    columna <input type="number" min="1"name="columna" required><br>
+    fila<input type="number" min="1"name="fila" required ><br>
+    multiplicador<input type="number" min="1"name="multiplicador" required><br>
+       
         <input type="submit" value="crear tabla">
+</center>
 
     </form>
     
